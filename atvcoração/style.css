@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.caixa {
+  width: 500px;
+  margin: auto;
+  padding: 30px 0;
+  background-color: rgb(83, 76, 76);
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 20px;
+  background-color: rgb(85, 74, 74);
+}
+
+.coracao {
+  display: block;
+  width: 400px;
+  height: auto;
+  margin: 100px auto 60px;
+  animation: pulsar 1.2s ease-in-out infinite;
+}
+
+/* O coração aumenta um pouco e volta ao tamanho inicial. */
+@keyframes pulsar {
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.10);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .coracao {
+    animation: none;
+  }
+}
